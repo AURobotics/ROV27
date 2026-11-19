@@ -1,0 +1,77 @@
+# IDE / Editor
+.vscode/
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ROS 2 / colcon build artifacts (root and nested)
+build/
+install/
+log/
+**/build/
+**/install/
+**/log/
+
+# C / C++ artifacts
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.d
+compile_commands.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.whl
+
+# Virtual environments & package managers
+.venv/
+venv/
+ENV/
+.pixi/
+
+# Videos & recorded media / bags
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.webm
+*.flv
+*.wmv
+*.m4v
+*.3gp
+*.bag
+*.db3
+*.mcap
+
+# ML / YOLO models, weights, and large datasets
+*.pt
+*.pth
+*.onnx
+*.engine
+*.safetensors
+**/models/
+
+# OS files
+.DS_Store
+Thumbs.db
