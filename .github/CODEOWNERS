@@ -1,0 +1,12 @@
+# Default fallback owner for root-level files
+* @AURobotics/Heads @AURobotics/Board 
+
+# Subproject owners
+/console/   @nada-osama-a @AURobotics/Software-Heads
+/firmware/  @AURobotics/Firmware-Heads
+/network/   @AURobotics/General-Maintainers @AURobotics/Heads
+/reports/   @AURobotics/General-Maintainers @AURobotics/Heads
+/rov_ws/    @AURobotics/SW-Maintainers @AURobotics/Heads
+
+# Lock down repo governance, workflows, and CODEOWNERS itself strictly to Maintainers
+/.github/   @AURobotics/Heads @AURobotics/Board
