@@ -3,10 +3,10 @@
 
 # Subproject owners
 /station/   @AURobotics/SW-Maintainers @AURobotics/Software-Heads
-/firmware/  @AURobotics/Firmware-Heads
+/firmware/  @zyman1000 @AURobotics/Firmware-Heads
 /network/   @AURobotics/General-Maintainers @AURobotics/Heads
 /reports/   @AURobotics/General-Maintainers @AURobotics/Heads
-/rov_ws/    @AURobotics/SW-Maintainers @AURobotics/Heads
+/rov_ws/    @zyman1000 @AURobotics/SW-Maintainers @AURobotics/Heads
 
 # Lock down repo governance, workflows, and CODEOWNERS itself strictly to Maintainers
 /.github/   @AURobotics/Heads @AURobotics/Board
