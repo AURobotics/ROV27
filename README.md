@@ -15,7 +15,7 @@ It is **not** recommended to directly open the monorepo root folder in your text
 | Project                          | Base Branch    | Description                                                             |
 | -------------------------------- | -------------- | ----------------------------------------------------------------------- |
 | [Monorepo](./)                   | `main`         | Structuring and root-level configuration of the monorepo                |
-| [console](./console/README.md)   | `console/dev`  | GUI for remote control                                                  |
+| [station](./station/README.md)   | `station/dev`  | GUI for remote control                                                  |
 | [firmware](./firmware/README.md) | `firmware/dev` | Firmware for the on-board MCUs                                          |
 | [network](./network/README.md)   | `network/dev`  | Configuration and scripts for network setup                             |
 | [reports](./reports/README.md)   | `reports/dev`  | Deliverable documents required by the competition                       |
@@ -25,14 +25,14 @@ It is **not** recommended to directly open the monorepo root folder in your text
 
 ### Branch Strategies
 
-Each subproject isolates active development on its own base branch (`<base>`, e.g., `console/dev` or `ros/dev`), while `main` holds stable, integrated versions of all subprojects.
+Each subproject isolates active development on its own base branch (`<base>`, e.g., `station/dev` or `ros/dev`), while `main` holds stable, integrated versions of all subprojects.
 
 ```mermaid
 graph TD
     subgraph ProjectTrack ["Contributions Pipeline"]
         direction TB
         subgraph MaintainersSync ["Heads / Maintainers"]
-            MainStart["main"] -->|"Create or Sync Base Branch"| ProjDev1["&lt;base&gt; (e.g., console/dev, ros/dev)"]
+            MainStart["main"] -->|"Create or Sync Base Branch"| ProjDev1["&lt;base&gt; (e.g., station/dev, ros/dev)"]
         end
 
         ProjDev1 -->|"New Feature Branch"| ProjFeature["&lt;project&gt;/&lt;FEATURE&gt;"]
@@ -135,7 +135,7 @@ graph TD
 
 ### Cross-Project Work
 
-When a task spans multiple subprojects (for example, changing a message format in `rov_ws` and updating its UI in `console`), keep each subproject's changes on its own feature branch targeting its respective `<base>` branch.
+When a task spans multiple subprojects (for example, changing a message format in `rov_ws` and updating its UI in `station`), keep each subproject's changes on its own feature branch targeting its respective `<base>` branch.
 
 #### Working on Multiple Branches Simultaneously
 
@@ -152,5 +152,5 @@ You can then open the subproject folder inside `ROV27-WT-<project>` directly in 
 
 #### Coordinating Linked PRs
 
-* Open separate feature PRs for each affected subproject (e.g., one targeting `ros/dev` and one targeting `console/dev`) and cross-reference them in the PR descriptions (`Depends on #<PR_NUMBER>`).
+* Open separate feature PRs for each affected subproject (e.g., one targeting `ros/dev` and one targeting `station/dev`) and cross-reference them in the PR descriptions (`Depends on #<PR_NUMBER>`).
 * Avoid sharing a single feature branch across multiple subproject base branches when using squash merges, as squashing rewrites commit hashes and makes cross-branch tracking unreliable.
