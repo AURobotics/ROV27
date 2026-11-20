@@ -2,7 +2,7 @@
 * @AURobotics/Heads @AURobotics/Board 
 
 # Subproject owners
-/console/   @nada-osama-a @AURobotics/Software-Heads
+/station/   @AURobotics/SW-Maintainers @AURobotics/Software-Heads
 /firmware/  @AURobotics/Firmware-Heads
 /network/   @AURobotics/General-Maintainers @AURobotics/Heads
 /reports/   @AURobotics/General-Maintainers @AURobotics/Heads

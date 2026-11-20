@@ -1,5 +1,5 @@
 [workspace]
-name = "console"
+name = "station"
 version = "0.1.0"
 readme = "README.md"
 platforms = ["linux-64", "win-64", "osx-64", "osx-arm64", "linux-aarch64"]
@@ -31,7 +31,7 @@ joy_monitor = "python src/testing/joy_monitor.py"
 tel_test = "python src/testing/test_telemetry.py"
 
 [pypi-dependencies]
-console = { path = ".", editable = true }
+station = { path = ".", editable = true }
 pyglet = ">=2.1.14, <3"
 
 [target.win-64.activation]
