@@ -20,6 +20,7 @@ It is **not** recommended to directly open the monorepo root folder in your text
 | [network](./network/README.md)   | `network/dev`  | Configuration and scripts for network setup                             |
 | [reports](./reports/README.md)   | `reports/dev`  | Deliverable documents required by the competition                       |
 | [rov_ws](./rov_ws/README.md)     | `ros/dev`      | ROS2 project for on-board control, navigation, vision and communication |
+| [float](./float/README.md)     | `float/dev`      | float's code |
 
 ---
 
