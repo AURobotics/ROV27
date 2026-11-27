@@ -1,18 +1,19 @@
 import sys
+from pathlib import Path
 from PySide6.QtGui import QGuiApplication
 from PySide6.QtQml import QQmlApplicationEngine
 
 def main():
     app = QGuiApplication(sys.argv)
-
     engine = QQmlApplicationEngine()
-    qml_file = "main.qml"
-    engine.load(qml_file)
+
+    qml_file = Path(__file__).resolve().parent / "qml" / "main.qml"
+    engine.load(qml_file.as_posix())
 
     if not engine.rootObjects():
-        return 1
+        sys.exit(-1)
 
-    return app.exec()
+    sys.exit(app.exec())
+
 if __name__ == "__main__":
-    sys.exit(main())
-    
+    main()
